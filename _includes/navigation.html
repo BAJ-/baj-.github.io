@@ -1,0 +1,18 @@
+<a href="#main" class="skip-link">Skip to main content</a>
+<header>
+  <nav aria-label="Main navigation">
+    <input id="nav-toggle" type="checkbox">
+    <label class="nav-toggle-label" for="nav-toggle">
+      <span></span>
+      <span></span>
+      <span>
+        <ul class="menu">
+          <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="{{ '/writings/' | relative_url }}" {% if page.url == '/writings/' %}aria-current="page"{% endif %}>Writings</a></li>
+          <li><a href="{{ '/art/' | relative_url }}" {% if page.url == '/art/' %}aria-current="page"{% endif %}>Art</a></li>
+          <li><a href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a></li>
+        </ul>
+      </span>
+    </label>
+  </nav>
+</header>
